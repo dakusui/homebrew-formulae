@@ -24,7 +24,7 @@ class JqFrontNative < Formula
     mkdir_p "#{prefix}"
     rm_f "./bin/yq"
     cp_r ".", "#{prefix}/"
-    ln_s "#{prefix}/jq-front", "#{prefix}/bin/jq-front"
+    ln_s "#{prefix}/jq-front", "#{prefix}/bin/jq-front-native"
   end
 
   test do
